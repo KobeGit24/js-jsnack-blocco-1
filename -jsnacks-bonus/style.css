@@ -1,0 +1,21 @@
+.money {
+    height: 300px;
+    width: 300px;
+    background-image: url(img/moneta8.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.retro-money {
+    height: 300px;
+    width: 300px;
+    background-image: url(img/moneta0.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
