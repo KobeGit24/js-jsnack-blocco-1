@@ -1,4 +1,4 @@
-//  LIVE CODING
+//  LIVE CODING 24/06
 
 // var x = prompt("inserisci");
 
@@ -111,6 +111,130 @@
 //         var debug = false;
 //     } 
 // }
+
+// LIVE CODING 25/06
+
+// ESERCIZI JSNACK !
+
+// JSnack Blocco 1
+
+// var num1 = parseInt(prompt('inserisci un numero'));
+// var num2 = parseInt(prompt('inserisci un numero'));
+
+// if (num1 > num2) {
+//    console.log(num1);   
+// } else if (num2 > num1) {
+//     console.log(num2);   
+// } else {
+//     console.log('sono uguali!');   
+// }
+
+// JSnack Blocco 2
+
+// var word1 = prompt('inserisci una parola');
+// var word2 = prompt('inserisci una parola');
+
+// if (word1.length > word2.length) {
+//     console.log(word2, word1);   
+//  } else {
+//      console.log(word1, word2);   
+//  }
+
+// JSnack Blocco 3
+
+// var tot = 0;
+
+// for (var i = 0; i < 5; i++) {
+//     var numUser = parseInt(prompt('inserisci un numero'));
+//     tot+=numUser; 
+// }
+
+// console.log(tot);   
+
+// var i = 0;
+
+// while (i<5) {
+//      var numUser = parseInt(prompt('inserisci un numero'));
+//      tot+=numUser;
+//      i++;
+// }
+
+// console.log(tot);  
+
+// JSnack Blocco 4
+
+// var userName = prompt("inserisci la tua mail:");
+
+// var surname = ['Rossi', 'Bianco', 'Esposito', 'Russo', 'Verde'];
+
+// var nonEsiste = true;
+
+// for (var i = 0; i < surname.length; i++) {
+//     if (surname[i] == userName ) {
+//         nonEsiste = false;
+//         console.log("WELCOME");
+//     } 
+// }
+ 
+// if(nonEsiste) {
+//     console.log("il suo nome non e' sulla lista");
+// }
+
+// METODO ALTERNATIVO
+
+// if (surname.indexOf(userName) === -1) {
+//    console.log("il suo nome non e' sulla lista");
+// } else {
+//    console.log("WELCOME");
+// }
+
+// JSnack Blocco 5
+
+// var tot = [];
+
+// for (var i = 0; i < 6; i++) {
+//     var numUser = parseInt(prompt('inserisci un numero'));
+//     if (numUser%2) {
+//         tot.push(numUser); 
+//     }
+// }
+
+// console.log(tot); 
+
+// JSnack Blocco 6
+
+
+// JSnack Blocco 7
+
+
+// JSnack Blocco 8
+
+
+// JSnack Blocco 9
+
+// ESERCIZIO DEL GIORNO
+
+for (var i = 0; i < 100; i++) {
+    var numero = i + 1;
+    var three = numero%3==0;
+    var five = numero%5==0;
+    if (three && five) {
+        document.getElementById('numeri').innerHTML += 'FizzBuzz' + " ";  
+        document.getElementById('numeri').className = "red";
+    }
+    else if (three) {
+        document.getElementById('numeri').innerHTML += 'Fizz' + " ";  
+        document.getElementById('numeri').className = "green";      
+    } 
+    else if (five) {
+        document.getElementById('numeri').innerHTML += 'Buzz' + " "; 
+        document.getElementById('numeri').className = "blue";
+    } 
+    else {
+        document.getElementById('numeri').innerHTML += numero + " "; 
+    }
+}
+
 
 
 
