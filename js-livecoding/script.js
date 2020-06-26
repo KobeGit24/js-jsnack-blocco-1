@@ -201,16 +201,6 @@
 
 // console.log(tot); 
 
-// JSnack Blocco 6
-
-
-// JSnack Blocco 7
-
-
-// JSnack Blocco 8
-
-
-// JSnack Blocco 9
 
 // ESERCIZIO DEL GIORNO
 
@@ -234,6 +224,51 @@
 //         document.getElementById('numeri').innerHTML += numero + " "; 
 //     }
 // }
+
+
+// LIVE CODING 26/06
+
+// JSnack Blocco 6
+// var x = parseInt(prompt('inserisci un numero'));
+
+// for (var i = 1; i < x + 1; i++) {
+//     console.log(Math.pow(i,3));
+// }
+
+// JSnack Blocco 7
+
+// for (var i = 0; i < 10; i++) {
+//     console.log(2**i);  
+// }
+
+// var numero = 1;
+// var exp = 1;
+// while (numero < 1000) {
+//     console.log(numero);
+//     numero = 2**exp;
+//     exp++;
+// }
+
+// JSnack Blocco 8
+
+// var x = prompt('inserisci un numero di quattro cifre');
+// console.log(x);
+// var sum = 0;
+// for (var i = 1; i < x.length; i++) {
+//   sum+= parseInt(x[i]);
+// }
+// console.log(sum);   
+
+
+// JSnack Blocco 9
+
+// var sum=0;
+// for (var i = 0; i < 10; i++) {
+//     var numero = parseInt(prompt('inserisci un numero'));
+//     sum += numero;
+// }
+// console.log('la somma:' + sum);
+// console.log('la media:' + sum/10);
 
 
 
