@@ -272,5 +272,78 @@
 
 // LIVE CODING 30/06
 
+// // Scrivi una funzione che cerchi all'interno di un array di numeri una corrispondenza
+// // Se il numero e' presente deve restituire la posizione altrimenti -1
 
+// var array = [1,80,30,55,100];
+// var num; // variabile che vogliamo vedere se presente nell'array che puo' assumere qualsiasi valore da noi scelto
 
+// function inArray(array, num) {
+// //    controllo numero per numero se ne trovo uno uguale
+//     for (var i = 0; i < array.length; i++) {
+//         if (array[i]==num) {
+//          return i;  
+//         }
+//     } 
+//     return -1;
+// }
+// // altra possibilita' piu' efficace !
+// var i = 0;
+// var posizione = -1;
+// while (i<array.length && posizione== -1) {
+//     if (array[i]==num) {
+//         posizione = 1;  
+//        }
+//     i++;
+// }
+
+// console.log(posizione);
+
+// // se vogliamo un contatore che ci dica quante volte la nostra variabile e' presente dentro l'array :
+// var count = 0;
+// for (var i = 0; i < array.length; i++) {
+//     if (array[i]==num) {
+//      count++;  
+//     }
+// }
+
+// // se vogliamo un contatore che ci dica quante volte la nostra variabile e' presente dentro l'array + posizione nell'array:
+
+// var count = 0;
+// var miaPosizione = [];
+// for (var i = 0; i < array.length; i++) {
+//     if (array[i]==num) {
+//      count++; 
+//      miaPosizione.push(i);
+//     }
+// }
+// console.log(count, miaPosizione);
+
+// // Switch / Case
+
+// var operation = 'somma';
+// var num1 = 10;
+// var num2 = 2;
+// var result = 0;
+
+// switch (operation) {
+//     case "somma":
+//         result = num1+num2;
+//         break;
+//     case "sottrazione":
+//         result = num1-num2;
+//         break;
+//     case "moltiplicazione":
+//         result = num1*num2;
+//         break;
+//     case "divisione":
+//         result = num1/num2
+//         break;
+
+//     default:
+//         console.log('operation non valida');
+        
+//         break;
+// }
+
+// console.log(operation, num1, num2, '=', result);
