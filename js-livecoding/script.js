@@ -270,6 +270,7 @@
 // console.log('la somma:' + sum);
 // console.log('la media:' + sum/10);
 
+// LIVE CODING 30/06
 
 
 
