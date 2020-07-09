@@ -390,4 +390,70 @@
 //     }
 // }
 
+// LIVE CODING 09/07 
 
+// setTimeout() !
+//setInterval() !
+//clearInterval() !
+
+// var com = [5,6,7];
+// alert(com);
+
+// setTimeout(computerNumber, 2000);
+
+// function computerNumber(params) {
+//     alert('3 5 7 33 47');
+// }
+
+// setInterval(computerNumber, 2000);
+
+// function computerNumber(params) {
+//     alert('3 5 7 33 47');
+// }
+
+//un alert espone 5 numeri casuali. da li parte un timer di 30 secondi. dopo 30 secondi l'utente deve inserire un prompt alla volta i numeri che ha visto precendentemente. dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuali.
+$(document).ready(function(){
+    var array = [];
+    
+    for (var i = 0; i < 5; i++) {
+        array.push(random(1,100));   
+    }
+    console.log(array);
+    
+    var time = 10;
+    
+    var timer = setInterval(function() {  
+        if (time==0) {
+            clearInterval(timer);
+            $('#modal').removeClass('active').text('');
+            i=0;
+            while (i<5) {
+                var numUser = prompt('inserisci i tuoi numeri');
+                i++;
+            }
+        } else {
+            time--;
+            $('#modal').addClass('active').text(array);
+            console.log(time); 
+        }
+    },1000);
+});
+
+
+
+
+
+// var showNum = setInterval(alert(array),2000);
+// clearInterval (showNum);
+
+
+
+
+
+// FUNCTION 
+
+function random(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
