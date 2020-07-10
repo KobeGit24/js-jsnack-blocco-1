@@ -416,34 +416,38 @@ $(document).ready(function(){
     var array = [];
     var user = [];
     
-    for (var i = 0; i < 5; i++) {
-        array.push(random(1,100));   
-    }
-    console.log(array);
+    // for (var i = 0; i < 5; i++) {
+    //     array.push(random(1,100));   
+    // }
+//     while (array.length<5) {
+//         var numRan = random(1,100);
+//         if (!array.includes(numRan)) {
+//           array.push(numRan); 
+//         }
+//     }
+//     console.log(array);
     
-    var time = 10;
-    var control = false;
+//     var time = 5;
     
-    var timer = setInterval(function() {  
-        if (time==0 && control == false) {
-            clearInterval(timer);
-            $('#modal').removeClass('active').text('');
-            control=true;
-        } else if (time==0 && control == true) {
-            i=0;
-            while (i<5) {
-                var numUser = prompt('inserisci i tuoi numeri');
-                user.push(numUser);
-                i++;
-            }
-            console.log(user);   
-        } else {
-            time--;
-            $('#modal').addClass('active').text(array);
-            console.log(time); 
-        }
-    },1000);
-});
+//     var timer = setInterval(function() {  
+//         if (time==0) {
+//             clearInterval(timer);
+//             $('#modal').removeClass('active').text('');
+//             $('#user-num').addClass('active');
+//             i=0;
+//             while (i<5) {
+//                 var numUser = $('#user').val();
+//                 user.push(numUser);
+//                 i++;
+//                 console.log(user);   
+//             }
+//         } else {
+//             time--;
+//             $('#modal').addClass('active').text(array);
+//             console.log(time); 
+//         }
+//     },1000);
+// });
 
 
 
