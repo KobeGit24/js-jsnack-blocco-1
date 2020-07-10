@@ -414,6 +414,7 @@
 //un alert espone 5 numeri casuali. da li parte un timer di 30 secondi. dopo 30 secondi l'utente deve inserire un prompt alla volta i numeri che ha visto precendentemente. dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuali.
 $(document).ready(function(){
     var array = [];
+    var user = [];
     
     for (var i = 0; i < 5; i++) {
         array.push(random(1,100));   
@@ -421,16 +422,21 @@ $(document).ready(function(){
     console.log(array);
     
     var time = 10;
+    var control = false;
     
     var timer = setInterval(function() {  
-        if (time==0) {
+        if (time==0 && control == false) {
             clearInterval(timer);
             $('#modal').removeClass('active').text('');
+            control=true;
+        } else if (time==0 && control == true) {
             i=0;
             while (i<5) {
                 var numUser = prompt('inserisci i tuoi numeri');
+                user.push(numUser);
                 i++;
             }
+            console.log(user);   
         } else {
             time--;
             $('#modal').addClass('active').text(array);
