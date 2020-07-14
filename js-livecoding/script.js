@@ -467,6 +467,27 @@
 // var showNum = setInterval(alert(array),2000);
 // clearInterval (showNum);
 
+// ex whatsup
+//   function clickUtente(){
+//     $('.contatto').removeClass('active');
+//     $(this).addClass('active');
+//     $('.nomeUtentescelto h4').remove();
+//     var nome = $('.contatto.active h4').clone();
+//     var target = $('.nomeUtentescelto').append(nome);
+//     $('.messaggi').removeClass('active');
+//     $($('.messaggi').get($(this).index())).addClass('active');
+//   }
+  
+  
+  
+  
+  
+//   function init() {
+//     $('.contatto').click(clickUtente);
+//     ricercaPerNome();
+//     $('#barraInvio').keydown(pressInvioMsg);
+//   }
+//   $(document).ready(init);
 
 
 
