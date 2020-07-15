@@ -478,6 +478,22 @@
 //     $($('.messaggi').get($(this).index())).addClass('active');
 //   }
   
+
+// SOLUZIONE GIOVANNI sul findName
+// function nameF() {
+//     var input = $(this);
+//     var txt = input.val();
+//     var contacts = $('.contacts .contact');
+//     contacts.each(function(){
+//         var contact = $(this);
+//         var name = contact.find('.contact-name').text();
+//         if (name.toLowerCase().includes(txt.toLowerCase())) {
+//             contact.show();
+//         } else {
+//             contact.hide();
+//         }
+//     });
+// }
   
   
   
