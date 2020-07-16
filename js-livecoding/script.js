@@ -467,6 +467,16 @@
 // var showNum = setInterval(alert(array),2000);
 // clearInterval (showNum);
 
+// FUNCTION NUMERI RANDOM
+
+// function random(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// E S E R C I Z I O   B O O L Z A P 
+
 // ex whatsup
 //   function clickUtente(){
 //     $('.contatto').removeClass('active');
@@ -494,10 +504,22 @@
 //         }
 //     });
 // }
-  
-  
-  
-  
+
+
+//SOLUZIONE GIOVANNI
+// function chooseChat2 () {
+//     var clicked = $(this);
+//     var id = clicked.data('id');
+//     var contact = $('.user-item');
+//     var conversations = $('.main-chat-user');
+//     var selectedConv = $('.main-chat-user[data-id=' + id + ']');
+
+//     contact.removeClass('active');
+//     selectedConv.addClass('active');
+//     conversations.removeClass('active');
+//     selectedConv.addClass('active');
+// }
+ 
 //   function init() {
 //     $('.contatto').click(clickUtente);
 //     ricercaPerNome();
@@ -507,11 +529,3 @@
 
 
 
-
-// FUNCTION 
-
-function random(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
