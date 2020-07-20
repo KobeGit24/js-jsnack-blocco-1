@@ -571,47 +571,151 @@
 //Dare la possibilità all'utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome e età (ex 2)
 
 
-function init() {
+// function init() {
 
-    var firstname = prompt('inserisci nome');
-    var lastname = prompt('inserisci cognome');
-    var age = prompt('inserisci eta');
+//     var firstname = prompt('inserisci nome');
+//     var lastname = prompt('inserisci cognome');
+//     var age = prompt('inserisci eta');
 
-    arrStudents (firstname,lastname,age);
-}
+//     arrStudents (firstname,lastname,age);
+// }
 
-function arrStudents (firstname,lastname,age) {
+// function arrStudents (firstname,lastname,age) {
 
-    var obj = {
-        'firstname' : firstname,
-        'lastname': lastname,
-        'age': age
-    }
+//     var obj = {
+//         'firstname' : firstname,
+//         'lastname': lastname,
+//         'age': age
+//     }
 
-    var array = [
-        {
-        'firstname':'Guybrush',
-        'lastname': 'Threepwood',
-        'age': 30
-        },
-        {
-        'firstname':'Pippo',
-        'lastname': 'Disney',
-        'age': 25
-        },
-        {
-        'firstname':'Pluto',
-        'lastname': 'Pixar',
-        'age': 20
-        }
-    ];
+//     var array = [
+//         {
+//         'firstname':'Guybrush',
+//         'lastname': 'Threepwood',
+//         'age': 30
+//         },
+//         {
+//         'firstname':'Pippo',
+//         'lastname': 'Disney',
+//         'age': 25
+//         },
+//         {
+//         'firstname':'Pluto',
+//         'lastname': 'Pixar',
+//         'age': 20
+//         }
+//     ];
 
-    array.push(obj);
+//     array.push(obj);
 
-    for (var i = 0; i < array.length; i++) {
-        console.log(array[i].firstname + ' ' + array[i].lastname + ' ' + array[i].age); // soluzione con dot.notation
-        // console.log(array[i]['firstname'] + ' ' + array[i]['lastname'] + ' ' + array[i]['age']); Soluzione equivalente (brachets-notation)!  
-    }
-}
+//     for (var i = 0; i < array.length; i++) {
+//         console.log(array[i].firstname + ' ' + array[i].lastname + ' ' + array[i].age); // soluzione con dot.notation
+//         // console.log(array[i]['firstname'] + ' ' + array[i]['lastname'] + ' ' + array[i]['age']); Soluzione equivalente (brachets-notation)!  
+//     }
+// }
 
-$(document).ready(init);
+// $(document).ready(init);
+
+// Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza.Calcolare perimetro e area.
+
+
+// function init() {
+//     triangleArea();
+// }
+
+// function triangleArea () {
+
+//     var triangolo = {
+//         'base': 3,
+//         'altezza': 4,
+//         'ipotenusa': 5
+//     };
+
+//     var area = (triangolo.base) * (triangolo.altezza) / 2;
+//     var perimetro = (triangolo.base) + (triangolo.altezza) + (triangolo.ipotenusa);
+//     console.log('area del triangolo: ',area);
+//     console.log('perimetro del triangolo: ',perimetro);
+
+// }
+
+// $(document).ready(init);
+
+//Richiedere all'utente base e altezza del triangolo rettangolo, calcolarne l'area e stampare informazioni attraverso Handlebars
+
+
+// function init() {
+
+//   triangleArea();
+// }
+
+// function triangleArea() {
+
+//     var triangolo = {
+        
+//         'base': parseInt(prompt('inserisci base')),
+//         'altezza': parseInt(prompt('inserisci altezza'))
+//     };
+
+//     var area = (triangolo.base) * (triangolo.altezza) / 2;
+//     console.log(area);
+
+//     var template = $('#triangle-template').html();
+//     var compiled = Handlebars.compile(template);
+//     var target = $('#area');
+
+//     var triangleHTML = compiled({area});
+
+//     target.append(triangleHTML);
+
+// }
+
+// $(document).ready(init);
+
+// function exStudent2() {
+//     var students = [
+//         {
+//             'fname': 'Guybrush',
+//             'lname': 'Threepwood',
+//             'age': 30
+//         },
+//         {
+//             'fname': 'Marco',
+//             'lname': 'Biondi',
+//             'age': 50
+//         },
+//         {
+//             'fname': 'Marcello',
+//             'lname': 'Da Rimini',
+//             'age': 25
+//         }
+//     ];
+
+    // var fname = prompt('first name');
+    // var lname = prompt('last name');
+    // var age = prompt('age');
+    //
+    // var student = {
+    //
+    //     'fname': fname,
+    //     'lname': lname,
+    //     'age': age
+    // };
+    //
+    // students.push(student);
+    // var template = $('#student-template').html(); // --> '<li><h2>{{ fname }} {{ lname }}: {{ age }}</h2></li>'
+    // var compiled = Handlebars.compile(template);
+    // var target = $('#students ul');
+    // for(var i=0;i<students.length;i++) {
+    //     var student = students[i];
+    //     console.log(student['fname'] + ' ' + student['lname'] + ': ' + student['age']);
+    //     var studentObj = {
+    //         'fname': student['fname'],
+    //         'lname': student['lname'],
+    //         'age': student['age'],
+    //         'weight': prompt('wieght')
+    //     };
+        // var studentHTML = compiled(student); // --> '<li><h2>Giorgio Bianchi: 99</h2></li>'
+//         var studentHTML = compiled(studentObj);
+//         target.append(studentHTML);
+//     }
+// }
