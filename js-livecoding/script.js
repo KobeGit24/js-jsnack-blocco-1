@@ -529,3 +529,88 @@
 
 
 
+//LEZIONE 20/07: I N T R O D U Z I O N E    A G L I    O G G E T T I 
+
+//for-in e' il ciclo per gli oggetti !!
+
+
+// for (var key in object) {
+//     if (object.hasOwnProperty(key)) {
+//         var element = object[key];
+        
+//     }
+// }
+
+// function init() {
+
+//     exStudent();
+// }
+
+// function exStudent() {
+    
+//     var student = {
+//         'firstname':'Guybrush',
+//         'lastname': 'Threepwood',
+//         'age': 30
+//     };
+
+//     for (var key in student) {
+//     if (student.hasOwnProperty(key)) {
+//         var element = student[key];
+
+//         console.log(key + '--->' + element);
+        
+//     }
+// }
+
+// }
+
+// $(document).ready(init);
+
+// Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome (ex 1)
+//Dare la possibilità all'utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome e età (ex 2)
+
+
+function init() {
+
+    var firstname = prompt('inserisci nome');
+    var lastname = prompt('inserisci cognome');
+    var age = prompt('inserisci eta');
+
+    arrStudents (firstname,lastname,age);
+}
+
+function arrStudents (firstname,lastname,age) {
+
+    var obj = {
+        'firstname' : firstname,
+        'lastname': lastname,
+        'age': age
+    }
+
+    var array = [
+        {
+        'firstname':'Guybrush',
+        'lastname': 'Threepwood',
+        'age': 30
+        },
+        {
+        'firstname':'Pippo',
+        'lastname': 'Disney',
+        'age': 30
+        },
+        {
+        'firstname':'Pluto',
+        'lastname': 'Pixar',
+        'age': 30
+        }
+    ];
+
+    array.push(obj);
+
+    for (var i = 0; i < array.length; i++) {
+        console.log(array[i].firstname + ' ' + array[i].lastname + ' ' + array[i].age);    
+    }
+}
+
+$(document).ready(init);
