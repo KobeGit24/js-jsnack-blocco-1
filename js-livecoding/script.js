@@ -597,19 +597,20 @@ function arrStudents (firstname,lastname,age) {
         {
         'firstname':'Pippo',
         'lastname': 'Disney',
-        'age': 30
+        'age': 25
         },
         {
         'firstname':'Pluto',
         'lastname': 'Pixar',
-        'age': 30
+        'age': 20
         }
     ];
 
     array.push(obj);
 
     for (var i = 0; i < array.length; i++) {
-        console.log(array[i].firstname + ' ' + array[i].lastname + ' ' + array[i].age);    
+        console.log(array[i].firstname + ' ' + array[i].lastname + ' ' + array[i].age); // soluzione con dot.notation
+        // console.log(array[i]['firstname'] + ' ' + array[i]['lastname'] + ' ' + array[i]['age']); Soluzione equivalente (brachets-notation)!  
     }
 }
 
