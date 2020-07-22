@@ -29,7 +29,7 @@ function guessNumber() {
                 
             console.log(error);
         }
-    })
+    });
     
 }
 
