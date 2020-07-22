@@ -2,10 +2,10 @@
 //Chiedere all'utente un numero compreso tra 1 e 100. Se il numero è compreso tra i 50 numeri precedentemente estratti allora il gioco continua, altrimenti termina. Qualora finisca indicare quanti numeri corretti sono stati indovinati
 
 function init() {
-    guestList();
+    guessNumber();
 }
 
-function guestList() {
+function guessNumber() {
     $.ajax({
         url : 'https://flynn.boolean.careers/exercises/api/array/integers?min=1&max=100&items=50',
         method : 'GET',
