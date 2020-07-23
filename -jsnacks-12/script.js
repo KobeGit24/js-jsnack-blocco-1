@@ -5,10 +5,6 @@ function init() {
 
     initSelect();
     checkData();
-
-    // var date = moment("2013-12-01");
-    // var x = date.isValid();
-    // console.log(x);
 }
 
 function checkData () {
